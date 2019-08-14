@@ -12,7 +12,7 @@
  *
  * @category   Magpleasure
  * @package    Magpleasure_Richsnippets
- * @copyright  Copyright (c) 2014 Magpleasure Ltd. (http://www.magpleasure.com)
+ * @copyright  Copyright (c) 2014-2015 Magpleasure Ltd. (http://www.magpleasure.com)
  * @license    http://www.magpleasure.com/LICENSE.txt
  */
 class Magpleasure_Richsnippets_Model_Observer extends Mage_Core_Block_Abstract

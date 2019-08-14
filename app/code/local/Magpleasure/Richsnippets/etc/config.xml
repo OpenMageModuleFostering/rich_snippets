@@ -12,14 +12,14 @@
 *
 * @category   Magpleasure
 * @package    Magpleasure_Richsnippets
-* @copyright  Copyright (c) 2014 Magpleasure Ltd. (http://www.magpleasure.com)
+* @copyright  Copyright (c) 2014-2015 Magpleasure Ltd. (http://www.magpleasure.com)
 * @license    http://www.magpleasure.com/LICENSE.txt
 */
 -->
 <config>
     <modules>
         <Magpleasure_Richsnippets>
-            <version>1.1</version>
+            <version>1.1.1</version>
         </Magpleasure_Richsnippets>
     </modules>
     <frontend>
