@@ -43,4 +43,51 @@ class Magpleasure_Richsnippets_Block_Catalog_Product_View_Markup extends Mage_Ca
     {
         return Mage::helper('richsnippets');
     }
+
+    /**
+     * Get Review Summary Model for product
+     *
+     * @return Mage_Review_Model_Review_Summary
+     */
+    protected function _getReviewSummary()
+    {
+        /** @var Mage_Review_Model_Review_Summary $summaryData */
+        $summaryData = Mage::getModel('review/review_summary')
+            ->setStoreId(Mage::app()->getStore()->getId())
+            ->load($this->getProduct()->getId());
+        return $summaryData;
+    }
+
+    /**
+     * Get product average rating value
+     *
+     * @return int
+     */
+    public function getAverageRating()
+    {
+        if ($this->getProduct()->getRatingSummary()) {
+            return $this->getProduct()->getRatingSummary()->getRatingSummary();
+        } else {
+            /** @var Mage_Review_Model_Review_Summary $summaryData */
+            $summaryData = $this->_getReviewSummary();
+            return $summaryData->getId() ? $summaryData->getRatingSummary() : 0;
+        }
+    }
+
+    /**
+     * Get product reviews count
+     *
+     * @return int
+     */
+    public function getReviewsCount()
+    {
+        if ($this->getProduct()->getRatingSummary()) {
+            $count = $this->getProduct()->getRatingSummary()->getReviewsCount();
+            return $count ? $count : 0;
+        } else {
+            /** @var Mage_Review_Model_Review_Summary $summaryData */
+            $summaryData = $this->_getReviewSummary();
+            return $summaryData->getId() ? $summaryData->getReviewsCount() : 0;
+        }
+    }
 }
