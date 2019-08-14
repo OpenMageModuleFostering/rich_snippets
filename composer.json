@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/rich_snippets",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "homepage": "",
+    "description": "Rich Snippets will allow you to integrate the information about product price, description, availability, currency etc. into search results.",
+    "authors": [
+    {
+        "name": "MagPleasure Ltd.",
+        "email": "support@magpleasure.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
