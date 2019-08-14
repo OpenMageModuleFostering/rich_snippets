@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "OSL-3.0",
     "homepage": "",
-    "description": "Rich Snippets will allow you to integrate the information about product price, description, availability, currency etc. into search results.",
+    "description": "Display rich snippets in Google search results to expand product description and increase conversion rate.",
     "authors": [
     {
         "name": "MagPleasure Ltd.",

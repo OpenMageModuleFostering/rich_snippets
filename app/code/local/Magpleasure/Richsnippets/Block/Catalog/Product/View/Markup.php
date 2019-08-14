@@ -90,4 +90,34 @@ class Magpleasure_Richsnippets_Block_Catalog_Product_View_Markup extends Mage_Ca
             return $summaryData->getId() ? $summaryData->getReviewsCount() : 0;
         }
     }
+
+    /**
+     * Get all product reviews
+     *
+     * @return Mage_Review_Model_Resource_Review_Collection
+     */
+    public function getReviews()
+    {
+        $reviews = Mage::getModel('review/review')->getCollection()
+            ->addStoreFilter(Mage::app()->getStore()->getId())
+            ->addStatusFilter(Mage_Review_Model_Review::STATUS_APPROVED)
+            ->addEntityFilter('product', $this->getProduct()->getId())
+            ->setDateOrder();
+        return $reviews;
+    }
+
+    /**
+     * Get average review rating
+     *
+     * @param $review
+     * @return float|int
+     */
+    public function getReviewRating($review)
+    {
+        $votes = array();
+        foreach ($review->getRatingVotes() as $vote) {
+            array_push($votes, $vote->getPercent());
+        }
+        return count($votes) ? array_sum($votes) / count($votes) : 0;
+    }
 }

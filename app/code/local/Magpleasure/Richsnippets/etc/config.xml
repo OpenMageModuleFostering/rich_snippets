@@ -19,7 +19,7 @@
 <config>
     <modules>
         <Magpleasure_Richsnippets>
-            <version>1.1.1</version>
+            <version>1.2</version>
         </Magpleasure_Richsnippets>
     </modules>
     <frontend>
@@ -81,6 +81,12 @@
                     <product_view>Magpleasure_Richsnippets_Block_Catalog_Product_View</product_view>
                 </richrewrite>
             </catalog>
+            <page>
+                <rewrite></rewrite>
+                <richrewrite>
+                    <html_breadcrumbs>Magpleasure_Richsnippets_Block_Page_Html_Breadcrumbs</html_breadcrumbs>
+                </richrewrite>
+            </page>
         </blocks>
         <resources>
             <richsnippets_setup>
@@ -158,6 +164,7 @@
         <richsnippets>
             <general>
                 <enabled>1</enabled>
+                <breadcrumbs>1</breadcrumbs>
             </general>
         </richsnippets>
     </default>

@@ -42,6 +42,12 @@ class Magpleasure_Richsnippets_Block_Catalog_Product_View extends Mage_Catalog_B
         return $html;
     }
 
+    /**
+     * Insert product schema.org markup
+     *
+     * @param $html
+     * @return mixed
+     */
     protected function _insertRichSnippets($html)
     {
         $markup = $this->getLayout()->getBlock('mp.richsnippets')->toHtml();

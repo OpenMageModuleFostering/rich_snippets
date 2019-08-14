@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <package>
     <name>rich_snippets</name>
-    <version>1.1.1</version>
+    <version>1.2.0</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/OSL-3.0">OSL-3.0</license>
     <channel>community</channel>
     <extends/>
-    <summary>Rich Snippets will allow you to integrate the information about product price, description, availability, currency etc. into search results.</summary>
-    <description>The extension is very easy-to use as there is only one option in the backend. You don't need to do markups for Google by yourself: the extension will do it automatically.&#xD;
-Without Rich Snippets, the AJAX Reviews extension will not display product rating in Google search results.</description>
-    <notes>* Worst rating isn't defined in markup.&#xD;
+    <summary>Display rich snippets in Google search results to expand product description and increase conversion rate.</summary>
+    <description>The extension is very easy-to use as there is only two options in the backend. You don't need to create markups for Google by yourself: the extension will make them and breadcrumbs automatically.</description>
+    <notes> + Breadcrumbs markup&#xD;
+ + Markup for aggregate product rating and each product review&#xD;
 </notes>
     <authors><author><name>MagPleasure Ltd.</name><user>Magpleasure</user><email>support@magpleasure.com</email></author></authors>
-    <date>2015-04-14</date>
-    <time>08:22:00</time>
-    <contents><target name="magelocal"><dir name="Magpleasure"><dir name="Richsnippets"><dir><dir name="Block"><dir name="Catalog"><dir name="Product"><dir name="View"><file name="Markup.php" hash="2b279af4b23074ec88c0ec2bbafd1b8d"/></dir><file name="View.php" hash="d06b18f25cb36eb63afa162fdf00ae95"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="d019b836cb3f8ee5e3a0b85ab1edc508"/></dir><dir name="Model"><file name="Observer.php" hash="d7dc1c56a095088374ef9db6235d7bcb"/></dir><dir name="etc"><file name="config.xml" hash="70eb5db433bb63887c2cf2d90df5b42b"/><file name="system.xml" hash="465494e974bf92706e64f25a4df99ec5"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="richsnippets.xml" hash="91d53350518069c549a10942b26ba627"/></dir><dir name="template"><dir name="richsnippets"><dir><dir name="catalog"><dir name="product"><dir name="view"><file name="markup.phtml" hash="d157f8898d73cfff270af06fc839fab5"/></dir></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Magpleasure_Richsnippets.xml" hash="dc5195d4636c51fe9081c44f3a29bb39"/></dir></target><target name="magelocale"><dir name="en_US"><file name="Magpleasure_Richsnippets.csv" hash="c356d86fd9d1db251c8df93d5fd27ebc"/></dir></target></contents>
+    <date>2015-07-02</date>
+    <time>14:16:43</time>
+    <contents><target name="magelocal"><dir name="Magpleasure"><dir name="Richsnippets"><dir><dir name="Block"><dir name="Catalog"><dir name="Product"><dir name="View"><file name="Markup.php" hash="16e2d498ce537abd230637e24db387b0"/></dir><file name="View.php" hash="5499b89d294c9a7b9566360c6f9d4dae"/></dir></dir><dir name="Page"><dir name="Html"><file name="Breadcrumbs.php" hash="88c090195a08e64f5d2eb7bbb3684ca6"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="0d0393d3fda0d4454267f761cee97838"/></dir><dir name="Model"><file name="Observer.php" hash="9baaff9e362b178ae5d2d93bccc6e008"/><dir name="System"><dir name="Config"><dir name="Source"><file name="Breadcrumbs.php" hash="06b1e35032442a98ace94449c20cd52e"/></dir></dir></dir></dir><dir name="etc"><file name="config.xml" hash="456e5e4b08716472993afa9f4d5fab0b"/><file name="system.xml" hash="c6a8f67bbc7bdda3c9620128eb768865"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="richsnippets.xml" hash="ecc7cee99e160a78343234c771aa236a"/></dir><dir name="template"><dir name="richsnippets"><dir><dir name="catalog"><dir name="product"><dir name="view"><file name="markup.phtml" hash="96658813b9a66815eb6f2904e58f352a"/></dir></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Magpleasure_Richsnippets.xml" hash="78027bb5afff660ebcebe13df2391faa"/></dir></target><target name="magelocale"><dir name="en_US"><file name="Magpleasure_Richsnippets.csv" hash="c9177f76dbd5825e4ce1f4050282cd9b"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php><package><name></name><channel>connect.magentocommerce.com/core</channel><min></min><max></max></package></required></dependencies>
 </package>
