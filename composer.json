@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/rich_snippets",
+    "name": "OpenMageModuleFostering\/rich_snippets",
     "type": "magento-module",
     "license": "OSL-3.0",
     "homepage": "",
     "description": "Display rich snippets in Google search results to expand product description and increase conversion rate.",
     "authors": [
-    {
-        "name": "MagPleasure Ltd.",
-        "email": "support@magpleasure.com"
-    }
-],
+        {
+            "name": "MagPleasure Ltd.",
+            "email": "support@magpleasure.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
